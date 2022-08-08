@@ -1,2 +1,30 @@
-# Yasal Mevzuat Takip
-Resmi Gazete Yasal Mevzuat Takip
+# KYS.YasalMevzuatTakip
+
+Projenin Aktif Olarak Çalıştığı Klasörde appsettings.json dosyası bulunmalıdır.
+ <br/>
+ appsettings.json içeriği:
+ <br/>
+ <code>
+ {
+  "MailConf": {
+    "MailAddress": "example@mail.com",
+    "Password": "examplePassword",
+    "Host": "smtp.gmail.com",
+    "Port": 587,
+    "TargetName": null,
+    "EnableSSL": true,
+    "MailTemplate": "Merhaba,<br><br>{0}<br><br>{1}<br><br>Bilgilerinize.<br><br>Anahtar kelimeler ve bulunduğu sayfalar aşağıdaki gibidir.<br>",
+    "MailTitle":"KYS Yasal Mevzuat Takip Uyarı Sistemi Hk."
+  },
+  "SearchKeys": [
+    "Gazete",
+    "Bilişim"
+  ],
+  "LoggingIsOn": true,
+  "MailRecipient": {
+    "MailTo": [],
+    "MailCC": [],
+    "MailBCC": []
+  }
+}
+ </code>
